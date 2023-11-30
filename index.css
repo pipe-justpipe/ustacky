@@ -263,6 +263,8 @@ footer {
   background-color: black;
   display: flex;
   padding: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* overlay for each product */
