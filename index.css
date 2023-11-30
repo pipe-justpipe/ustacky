@@ -286,39 +286,54 @@ footer {
   align-items: center;
 }
 
-/* overlay for each product */
-.gadgets div {
-  position: relative;
-  overflow: hidden;
-}
 
-.gadgets .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Media query for smaller screens */
+@media (max-width: 890px) {
+  body {
+    font-size: 10px;
+  }
+
+  /* Adjust navigation styles for smaller screens */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-li {
+    margin-top: 1em;
+  }
+
+  .nav-li a {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  .introA{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+.txt{
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  font-size: 45px;
+  margin-top: 15%;
+  color: #ff9a3d;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  font-weight: 700;
 }
 
-.gadgets .hover:hover .overlay {
-  opacity: 1;
+  /* ... (adjust other styles as needed) */
 }
 
-.gadgets .overlay p {
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.gadgets .overlay h1 {
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  body {
+    font-size: 8px; /* Further adjust font size for smaller screens */
+  }
+
+  /* ... (additional adjustments for smaller screens) */
 }
