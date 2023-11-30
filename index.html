@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Millenial Store</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav">
+          <div><img src="Images/EMS.svg" alt="EMS logo" /></div>
+          <div>
+            <ul class="nav-li">
+              <li><a href="#">Intro</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#" class="last-child">Shop</a></li>
+            </ul>
+          </div>
+          <div class="cart-container">
+            <img src="Images/cart.svg" alt="cart icon" id="cart" />
+            <span class="goods">0</span>
+          </div>
+        </div>
+      </nav>
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <table id="cartTable">
+            <thead>
+              <tr>
+                <th>S/N</th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody id="cartBody">
+              <!-- Cart items will be added here dynamically -->
+            </tbody>
+          </table>
+          <form id="checkoutForm">
+            <div class="input">
+              <input type="text" id="name" placeholder="Your Name" />
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="input">
+              <input type="email" placeholder="Your Email" id="email" />
+              <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="input">
+              <input type="tel" placeholder="Your Phone Number" id="phone" />
+              <span class="error-message" id="phoneError"></span>
+            </div>
+
+            <div class="total_amount">
+              <h1>Total Amount to be Paid</h1>
+              <span>₦0</span>
+            </div>
+            <div class="buttons">
+              <button type="submit" id="checkout-btn">Checkout</button>
+              <button type="submit" id="dark_orange">Continue Shopping</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="sectionA">
+        <div class="introA">
+          <h2 class="txt">
+            THE<br />
+            E-MILLENIAL STORE
+          </h2>
+          <img
+            src="Images/heroImage.png"
+            alt="picture showing gadget"
+            class="img"
+          />
+        </div>
+        <div>
+          <button class="intro-btn">SHOP NOW</button>
+        </div>
+      </section>
+      <section id="sectionB">
+        <p>
+          E-Millenial store is a hypothetical store for gadgets we believe every
+          Millenial or 'Gen Z' should have today. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Ea, eum sunt? Veniam perferendis ratione
+          id expedita? Commodi itaque vitae possimus consectetur qui officiis
+          esse, provident minus. Ut dolorum modi quo? We've got mobile phones,
+          laptops, smartwatches and other gadgets. Explore all our gadgets and
+          choose the ones that suit you.
+        </p>
+      </section>
+      <section id="sectionC">
+        <h1>OUR GADGETS</h1>
+        <div class="gadgets">
+          <div class="product-container">
+            <div class="hover">
+              <img class="image" src="Images/product1.png" alt="a samsung TV" />
+              <div class="overlay">
+                <p>Price</p>
+                <h1>₦500,000</h1>
+              </div>
+            </div>
+            <h2>SAMSUNG TV</h2>
+            <button class="grid-btn" id="samsung-tv">ADD TO CART</button>
+          </div>
+          <div class="product-container">
+            <div class="hover">
+              <img
+                class="image"
+                src="Images/product2.png"
+                alt="a pixel phone"
+              />
+              <div class="overlay">
+                <p>Price</p>
+                <h1>₦500,000</h1>
+              </div>
+            </div>
+            <h2>PIXEL 4A</h2>
+            <button class="grid-btn" id="pixel-phone">ADD TO CART</button>
+          </div>
+          <div class="product-container">
+            <div class="hover">
+              <img class="image" src="Images/product3.png" alt="PS5" />
+              <div class="overlay">
+                <p>Price</p>
+                <h1>₦500,000</h1>
+              </div>
+            </div>
+            <h2>PS 5</h2>
+            <button class="grid-btn" id="ps5">ADD TO CART</button>
+          </div>
+          <div class="product-container">
+            <div class="hover">
+              <img class="image" src="Images/product4.png" alt="laptop" />
+              <div class="overlay">
+                <p>Price</p>
+                <h1>₦500,000</h1>
+              </div>
+            </div>
+            <h2>MACBOOK AIR</h2>
+            <button class="grid-btn" id="laptop">ADD TO CART</button>
+          </div>
+          <div class="product-container">
+            <div class="hover">
+              <img class="image" src="Images/product5.png" alt="iwatch" />
+              <div class="overlay">
+                <p>Price</p>
+                <h1>₦500,000</h1>
+              </div>
+            </div>
+            <h2>APPLE WATCH</h2>
+            <button class="grid-btn" id="iwatch">ADD TO CART</button>
+          </div>
+          <div class="product-container">
+            <div class="hover">
+              <img class="image" src="Images/product6.png" alt="airpod" />
+              <div class="overlay">
+                <p>Price</p>
+                <h1>₦500,000</h1>
+              </div>
+            </div>
+            <h2>AIR PODS</h2>
+            <button class="grid-btn" id="airpod">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <img src="Images/EMS.svg" alt="EMS Image" />
+        <p>Designed and created by Aremo Pipeloluwa</p>
+      </footer>
+      <form>
+        <input type="text" />
+        <input type="email" />
+        <input type="number" />
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
