@@ -202,10 +202,16 @@ form button{
 }
 .txt{
     width: 40%;
-    font-size: 3em;
+    font-size: 45px;
     margin-top: 15%;
     color: #ff9a3d;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.the{
+
 }
 .img{
     height:auto;
