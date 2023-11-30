@@ -314,6 +314,7 @@ function updateCartModal() {
 }
 
 // Function to handle quantity button clicks
+// Function to handle quantity button clicks
 function handleQuantityButtonClick(event) {
   const { action, index } = event.target.dataset;
 
@@ -324,6 +325,9 @@ function handleQuantityButtonClick(event) {
     if (cart[index].quantity > 1) {
       cart[index].quantity--;
       cart[index].price = productPrice * cart[index].quantity;
+    } else {
+      // Display alert if trying to decrement below 1
+      alert("You cannot have less than one item. If you wish to remove the item, click remove.");
     }
   }
 
@@ -341,6 +345,7 @@ function handleQuantityButtonClick(event) {
   goods.innerText = cart.reduce((total, item) => total + item.quantity, 0); // Update the goods count
   updateCartModal();
 }
+
 
 // Event listener for quantity buttons
 document.addEventListener('click', (event) => {
