@@ -308,7 +308,7 @@ footer {
     margin-bottom: 1em;
   }
   .introA{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -316,14 +316,20 @@ footer {
     justify-content: space-around;
 }
 .txt{
-  width: 100%;
+  width: 80%;
   font-size: 45px;
   margin-top: 15%;
   color: #ff9a3d;
-  text-align: left;
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img{
+  height:auto;
+  width: 100%;
 }
 
   /* ... (adjust other styles as needed) */
