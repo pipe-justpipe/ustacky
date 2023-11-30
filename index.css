@@ -168,6 +168,7 @@ input{
   display: flex;
   justify-content: flex-end;
   gap: 6px;
+  margin-bottom: 10px;
 }
 .buttons > button{
   background-color: #FFE9D6;
@@ -221,12 +222,16 @@ form button{
     background-color: #FF7A00;
     color: white;
     border: none;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
-    padding: 0.5em;
+    padding: 17px 19px;
     width: 10%;
     margin-left: auto;
     margin-right: auto;
+}
+a{
+  text-decoration: none;
 }
 #sectionB{
     background-color: black;

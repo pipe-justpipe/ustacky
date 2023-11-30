@@ -313,7 +313,7 @@ function updateCartModal() {
   document.querySelector('.total_amount span').textContent = `₦${totalAmount}`;
 }
 
-// Function to handle quantity button clicks
+
 // Function to handle quantity button clicks
 function handleQuantityButtonClick(event) {
   const { action, index } = event.target.dataset;
@@ -453,7 +453,9 @@ function validateForm() {
   }
 
   // Validate phone number
-  const phoneRegex = /^\d{10}$/;
+
+  const phoneRegex = /^[+]?[0-9]{0,15}$/;
+
   if (!phoneRegex.test(phoneInput.value)) {
     isValid = false;
     phoneError.textContent = 'Please enter a valid phone number';
