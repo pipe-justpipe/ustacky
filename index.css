@@ -398,12 +398,10 @@ footer {
 }
 .txt{
   width: 80%;
-  font-size: 45px;
+  font-size: 35px;
   margin-top: 15%;
   color: #ff9a3d;
   text-align: center;
-  display: flex;
-  flex-direction: row;
   font-weight: 700;
   margin-left: auto;
   margin-right: auto;
@@ -456,5 +454,15 @@ footer {
 
 .ems{
   width: 25%;
+}
+
+.txt{
+  width: 30%;
+  font-size: 15px;
+  margin-top: 15%;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 }
