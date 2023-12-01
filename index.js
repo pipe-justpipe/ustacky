@@ -510,10 +510,41 @@ document.querySelector('#checkout-btn').addEventListener('click', (e) => {
   checkout();
 });
 
-document.querySelector('#continue-shopping-btn').addEventListener('click', (e) => {
-  e.preventDefault();
-  continueShopping();
-});
+// document.querySelector('#continue-shopping-btn').addEventListener('click', (e) => {
+//   e.preventDefault();
+//   continueShopping();
+// });
+
+
+// const hamburgerBtn = document.querySelector('.hamburger-btn');
+// const closeBtn = document.querySelector('.close-btn');
+// const nav = document.querySelector('.nav');
+
+// hamburgerBtn.addEventListener('click', () => {
+//   nav.classList.toggle('active');
+// });
+
+// closeBtn.addEventListener('click', () => {
+//   nav.classList.toggle('active');
+// });
+
+// document.addEventListener('click', (event) => {
+//   if (!nav.contains(event.target) && event.target !== hamburgerBtn) {
+//     nav.classList.remove('active');
+//   }
+// });
+
+const menuButton = document.querySelector('.hamburger-btn')
+const  navList = document.querySelector('.nav-li')
+menuButton.addEventListener('click', () => {
+  if(navList.style.display === 'none'){
+    navList.style.display = 'flex'
+  }else{
+    navList.style.display = 'none'
+  }
+  
+
+})
 
 
 
