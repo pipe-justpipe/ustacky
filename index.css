@@ -113,6 +113,9 @@ body {
     color: black;
     font-weight: 700;
 }
+.ems{
+  display: block;
+}
 
 .close-btn {
   display: none;
@@ -285,6 +288,42 @@ a{
 h2{
   text-align: center;
 }
+/* overlay for each product */
+.gadgets div {
+  position: relative;
+  overflow: hidden;
+}
+
+.gadgets .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gadgets .hover:hover .overlay {
+  opacity: 1;
+}
+
+.gadgets .overlay p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.gadgets .overlay h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
 .grid-btn{
   border: none;
   display: flex;
@@ -349,10 +388,6 @@ footer {
     padding: 20px;
   }
 
-  /* .nav.active .nav-li {
-    display: flex;
-    flex-direction: column;
-  } */
   .introA{
     width: 100%;
     display: flex;
@@ -417,5 +452,9 @@ footer {
     grid: auto / auto;
     padding: 10px;
     align-items: center;
+}
+
+.ems{
+  width: 25%;
 }
 }
