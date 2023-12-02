@@ -3,7 +3,7 @@ const addToCartButtons = document.querySelectorAll('.grid-btn');
 const goods = document.querySelector('.goods');
 
 // const count = 0;
-const productPrice = 500000; // You can replace this with the actual price
+const productPrice = 500000; 
 
 // Modal
 const modal = document.getElementById('myModal');
@@ -11,14 +11,14 @@ const closeModal = document.querySelector('.close');
 
 // Cart data
 const cart = [];
-let totalAmount = 0; // Added variable to store the total amount
+let totalAmount = 0; 
 
 // Function to update the cart modal
 function updateCartModal() {
   const cartBody = document.getElementById('cartBody');
-  cartBody.innerHTML = ''; // Clear existing content
+  cartBody.innerHTML = ''; 
 
-  totalAmount = 0; // Reset total amount
+  totalAmount = 0; 
 
   cart.forEach((item, index) => {
     const row = document.createElement('tr');
