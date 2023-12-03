@@ -32,7 +32,7 @@ function updateCartModal() {
         <button class="quantity-btn" data-index="${index}" data-action="increment">+</button>
       </td>
       <td>
-        <button class="button" data-index="${index}" data-action="remove">remove</button>
+        <button class="button rmv_btn" data-index="${index}" data-action="remove">remove</button>
       </td>
     `;
     cartBody.appendChild(row);
